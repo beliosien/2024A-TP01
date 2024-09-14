@@ -76,7 +76,7 @@ class TestExercice3(unittest.TestCase):
         simulated_inputs = f"{speed}\n{angle}\n"
         output = self.runner.run(simulated_inputs)
         expected = f"{self.input_questions}Distance parcourue: {distance}m\n"
-        self.assertEqual(output, expected)
+        self.assertEqual(expected, output)
 
     def test_standard_speed2(self): 
         speed = 45
@@ -85,7 +85,7 @@ class TestExercice3(unittest.TestCase):
         simulated_inputs = f"{speed}\n{angle}\n"
         output = self.runner.run(simulated_inputs)
         expected = f"{self.input_questions}Distance parcourue: {distance}m\n"
-        self.assertEqual(output, expected)
+        self.assertEqual(expected, output)
 
 class TestExercice4(unittest.TestCase): 
     def setUp(self) -> None:
@@ -98,7 +98,7 @@ class TestExercice4(unittest.TestCase):
         simulated_inputs = f"{battery_percentage}\n"
         output = self.runner.run(simulated_inputs)
         expected = f"{self.input_questions}La batterie est vide\n"
-        self.assertEqual(output, expected)
+        self.assertEqual(expected, output)
 
     def test_twelve_percents(self): 
         battery_percentage = 12
@@ -106,7 +106,7 @@ class TestExercice4(unittest.TestCase):
         distance = 44.5
         output = self.runner.run(simulated_inputs)
         expected = f"{self.input_questions}{distance} km\n"
-        self.assertEqual(output, expected)
+        self.assertEqual(expected, output)
 
 
     def test_twenty_two(self): 
@@ -115,7 +115,7 @@ class TestExercice4(unittest.TestCase):
         distance = 55.0
         output = self.runner.run(simulated_inputs)
         expected = f"{self.input_questions}{distance} km\n"
-        self.assertEqual(output, expected)
+        self.assertEqual(expected, output)
 
 
     def test_seventy_four(self): 
@@ -124,7 +124,7 @@ class TestExercice4(unittest.TestCase):
         distance = 118.0
         output = self.runner.run(simulated_inputs)
         expected = f"{self.input_questions}{distance} km\n"
-        self.assertEqual(output, expected)
+        self.assertEqual(expected, output)
 
 
     def test_forty_nine(self): 
@@ -133,7 +133,7 @@ class TestExercice4(unittest.TestCase):
         distance = 69.5
         output = self.runner.run(simulated_inputs)
         expected = f"{self.input_questions}{distance} km\n"
-        self.assertEqual(output, expected)
+        self.assertEqual(expected, output)
 
 class TestExercice5(unittest.TestCase): 
     def setUp(self) -> None:
