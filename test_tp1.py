@@ -13,7 +13,7 @@ class TestExercice1(unittest.TestCase):
         simulated_inputs = f"{country}\n{athlete}\n{date}\n{sport}\n{category}\n{record}\n"
         output = self.runner.run(simulated_inputs)
         expected = f"{self.input_questions}\nNouveau Record:\n--------------------\n{date} - {sport} - {category}:\n\t{athlete} ({country}) - {record}\n"
-        self.assertEqual(output, expected)
+        self.assertEqual(expected, output)
 
     def test_exercice1_swimmer(self):
         country = "CAN"
@@ -47,7 +47,7 @@ class TestExercice2(unittest.TestCase):
 \t- Filtre(s) : {n_filter}
 \t- Lampe(s) UV : {n_light}
 \t- Chlore : {kg_chlorine}kg\n"""
-        self.assertEqual(output, expected)
+        self.assertEqual(expected, output)
 
     def test_standard_water(self):
         water_quantity = 5.0
